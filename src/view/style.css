@@ -1,0 +1,18 @@
+#mail_field
+{
+	-fx-text-fill: rgb(109,181,45);
+	-fx-alignment: LEFT;
+	-fx-border-width: 10px;
+	-fx-underline:true;
+}
+
+#connect
+{
+	-fx-text-fill: rgb(244,244,245);
+	-fx-alignment: CENTER;
+	-fx-background-color : rgb(109,181,45);
+}
+#account
+{
+	-fx-background-color : rgba(0,0,0,0);
+}
