@@ -183,7 +183,7 @@
                         <Insets right="20.0" top="20.0" />
                      </GridPane.margin>
                   </Button>
-                  <Label text="Ajouté il y a 1h" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                  <Label text="Ajouté il y a 11h" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                      <GridPane.margin>
                         <Insets bottom="15.0" right="15.0" />
                      </GridPane.margin>
