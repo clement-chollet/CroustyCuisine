@@ -12,7 +12,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Controller {
-@FXML protected Text actiontarget;
+	@FXML protected Text actiontarget;
 	
 	@FXML
     private Button btn1;
