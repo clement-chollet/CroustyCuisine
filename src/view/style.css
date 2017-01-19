@@ -4,6 +4,8 @@
 	-fx-alignment: LEFT;
 	-fx-border-width: 10px;
 	-fx-underline:true;
+	-fx-background-color : rgba(109,181,45,0);
+	-fx-underline: true;
 }
 
 #connect
@@ -11,10 +13,26 @@
 	-fx-text-fill: rgb(244,244,245);
 	-fx-alignment: CENTER;
 	-fx-background-color : rgb(109,181,45);
+	-fx-background-radius: 0,0,0,0;
+	/*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
 }
 #account
 {
-	-fx-background-color : rgba(0,0,0,0);
+    -fx-background-color: 
+        linear-gradient(#6DB52D 100%, #6DB52D 100%, #6DB52D 100%, #6DB52D 100%),
+        linear-gradient(#6DB52D, #6DB52D),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #FFFFFF 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #FFFFFF 100%, #FFFFFF 100%, #FFFFFF 100%);
+    -fx-background-insets: 0,2,2,2;
+    -fx-background-insets: 0,2,2,2;
+    -fx-background-radius: 0,0,0,0;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6DB52D;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+	/*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
 }
 
 #cadre
@@ -25,4 +43,9 @@
 #edit
 {
 	 -fx-background-image: url('http://icons.iconarchive.com/icons/aha-soft/desktop-buffet/128/Pizza-icon.png');
+}
+
+#pane
+{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
 }
