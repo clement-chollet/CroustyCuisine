@@ -1,0 +1,22 @@
+#Recette_mainGridpane{
+	-fx-background-color: rgb(109,181,45);
+	}
+	
+#Recette_appGridpane{
+	-fx-background-color: rgb(241,241,241);
+	}
+	
+#Recette_recetteGridpane{
+	-fx-background-color: rgb(255,255,255);
+	}
+	
+#Recette_ingredient{
+	-fx-background-color: rgb(255,255,255);
+	}
+	
+#Recette_ingredientLabel{
+	-fx-text-fill: rgb(109,181,45);
+	}
+	
+	
+	

@@ -18,6 +18,8 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("CroustyCuisine");
+			primaryStage.setMinHeight(600);
+			primaryStage.setMinWidth(450);
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
