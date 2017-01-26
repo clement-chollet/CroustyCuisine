@@ -46,6 +46,9 @@ public class Controller {
 	private ImageView chaud;
 	@FXML
 	private ImageView froid;
+	
+	@FXML
+	private ImageView recette;
 		
 	@FXML
 	protected void initialize() {
@@ -59,7 +62,7 @@ public class Controller {
 		set_image(glace,b.glace, "/image/glace.png", "/image/glace_2.png");
 		set_image(chaud,b.chaud, "/image/chaud.png", "/image/chaud_2.png");
 		set_image(froid,b.froid, "/image/froid.png", "/image/froid_2.png");		
-	}
+		}
 	
 	public void set_image(ImageView iv, boolean b, String i1, String i2 )
 	{
