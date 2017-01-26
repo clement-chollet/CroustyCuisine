@@ -7,12 +7,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: rgb(109,181,45);" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: rgb(109,181,45);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -29,48 +28,46 @@
       <GridPane id="pane" prefWidth="450.0" style="-fx-background-color: rgb(244,244,245);" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="93.0" />
-          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+          <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="1.7976931348623157E308" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="89.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="82.0" minHeight="6.0" prefHeight="74.0" />
+          <RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="251.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="251.0" minHeight="10.0" prefHeight="191.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField id="mail_field" maxWidth="1.7976931348623157E308" promptText="Mot de passe" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+            <TextField id="mail_field" alignment="CENTER" maxWidth="1.7976931348623157E308" promptText="Mot de passe" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
                <font>
                   <Font size="21.0" />
                </font>
             </TextField>
-            <Button id="connect" fx:id="btn1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="224.0" text="Se connecter" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button id="connect" fx:id="btn1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="224.0" text="Se connecter" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button id="account" mnemonicParsing="false" prefHeight="62.0" prefWidth="265.0" text="Créer un nouveau compte" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button id="account" mnemonicParsing="false" prefHeight="62.0" prefWidth="265.0" text="Créer un nouveau compte" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets bottom="50.0" />
                </GridPane.margin></Button>
+            <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#6db52d" height="3.0" scaleY="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="246.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="30.0" />
+               </GridPane.margin>
+            </Rectangle>
             <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#6db52d" height="3.0" scaleY="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="246.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets top="30.0" />
                </GridPane.margin>
             </Rectangle>
-            <Pane GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER">
-               <children>
-                  <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#6db52d" height="3.0" layoutX="11.0" layoutY="35.75" scaleY="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="246.0" />
-                  <TextField id="mail_field" maxWidth="1.7976931348623157E308" promptText="Adresse mail ou mobile">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </TextField>
-               </children>
-               <GridPane.margin>
-                  <Insets top="80.0" />
-               </GridPane.margin>
-            </Pane>
+            <TextField id="mail_field" alignment="CENTER" maxWidth="1.7976931348623157E308" promptText="Adresse mail" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
          </children>
       </GridPane>
    </children>
