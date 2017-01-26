@@ -46,10 +46,7 @@ public class Controller {
 	private ImageView chaud;
 	@FXML
 	private ImageView froid;
-	
-
-
-	
+		
 	@FXML
 	protected void initialize() {
 		set_image(cocktail,b.cocktail, "/image/cocktail.png", "/image/cocktail_2.png");
@@ -159,14 +156,14 @@ public class Controller {
 		// TODO Auto-generated method stub
 		if (event.getSource() == source && b)
 	     {
-	    	 System.out.println("activated");
+	    	 System.out.println("not activated");
 	    	 Image image = new Image(img_1);
 	    	 source.setImage(image);
 	    	 b = false;
 	     }
 	     else if (event.getSource() == source && !b)
 	     {
-	    	 System.out.println("not activated");
+	    	 System.out.println("activated");
 	    	 
 	    	 Image image = new Image(img_2);
 	    	 source.setImage(image);
