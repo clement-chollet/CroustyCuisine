@@ -14,7 +14,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <GridPane maxHeight="10.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="450.0" style="-fx-background-color: rgb(109,181,45);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+=======
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: rgb(109,181,45);" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+>>>>>>> branch 'master' of https://github.com/clement-chollet/CroustyCuisine.git
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="45.0" prefWidth="450.0" />
   </columnConstraints>
@@ -70,7 +74,7 @@
                 <MenuItem mnemonicParsing="false" text="Action 2" />
               </items>
             </MenuButton>
-            <ImageView fitHeight="35.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+            <ImageView fx:id="add" fitHeight="35.0" fitWidth="42.0" onMouseClicked="#handle_add" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
                <image>
                   <Image url="@../image/add.png" />
                </image>
