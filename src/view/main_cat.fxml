@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
@@ -212,82 +213,86 @@
                   </ImageView>
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: rgb(237,237,237);" GridPane.rowIndex="5">
-              <columnConstraints>
-                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="152.0" />
-                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="148.0" />
-                <ColumnConstraints hgrow="ALWAYS" maxWidth="322.0" minWidth="10.0" prefWidth="153.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="234.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="234.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="224.0" minHeight="9.0" prefHeight="49.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+            <VBox GridPane.rowIndex="5">
                <children>
-                  <ImageView fx:id="cocktail" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../image/cocktail.png" />
-                     </image>
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                  </ImageView>
-                  <ImageView fx:id="apero" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../image/apero.png" />
-                     </image>
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                  </ImageView>
-                  <ImageView fx:id="dessert" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
-                     <image>
-                        <Image url="@../image/dessert.png" />
-                     </image>
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                  </ImageView>
-                  <ImageView fx:id="entree" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../image/entree.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="sale" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../image/sale.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="sucre" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../image/sucre.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="plat" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../image/plat.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="glace" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../image/glace.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="chaud" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../image/chaud.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="froid" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
-                     <image>
-                        <Image url="@../image/froid.png" />
-                     </image>
-                  </ImageView>
+                  <GridPane style="-fx-background-color: rgb(237,237,237);">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="152.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="148.0" />
+                      <ColumnConstraints hgrow="ALWAYS" maxWidth="322.0" minWidth="10.0" prefWidth="153.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="234.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="234.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="224.0" minHeight="9.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="cocktail" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../image/cocktail.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="apero" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../image/apero.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="dessert" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../image/dessert.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="entree" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../image/entree.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="sale" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../image/sale.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="sucre" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../image/sucre.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plat" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../image/plat.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="glace" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../image/glace.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="chaud" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../image/chaud.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="froid" fitHeight="38.0" fitWidth="120.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../image/froid.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
                </children>
-            </GridPane>
+            </VBox>
             <Button id="cat_button" fx:id="cat_button_2" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="491.0" text="..." GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="TOP" />
          </children>
       </GridPane>
