@@ -34,7 +34,7 @@
           <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="50.0" vgrow="NEVER" />
         </rowConstraints>
          <children>
-            <Button fx:id="recente" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: rgba(0,0,0,0);" text="Récent" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <Button fx:id="recent" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: rgba(0,0,0,0);" text="Récent" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
@@ -98,7 +98,7 @@
             <RowConstraints maxHeight="555.0" minHeight="10.0" prefHeight="352.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane id="cadre" fx:id="receipe1" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="1">
+            <GridPane id="cadre" fx:id="receipe1" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="3">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
@@ -152,7 +152,7 @@
                   </ImageView>
                </children>
             </GridPane>
-            <GridPane id="cadre" fx:id="receipe2" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+            <GridPane id="cadre" fx:id="receipe2" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
@@ -206,7 +206,7 @@
                   </ImageView>
                </children>
             </GridPane>
-            <Button id="cat_button" fx:id="cat_button" alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="491.0" text="..." GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+            <Button id="cat_button" fx:id="cat_button_note" alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="491.0" text="..." GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
          </children>
       </GridPane>
    </children>

@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -20,9 +21,27 @@ public class Controller {
 	@FXML
     private Button btn1;
 	@FXML
+    private Button back;
+	@FXML
+    private Button difficulty;
+	@FXML
+    private Button note;
+	@FXML
+    private Button recent;
+	@FXML
+    private Button difficulty_cat;
+	@FXML
+    private Button note_cat;
+	@FXML
+    private Button recent_cat;
+	@FXML
     private Button cat_button;
 	@FXML
+    private Button cat_button_note;
+	@FXML
     private Button cat_button_2;
+	@FXML
+    private Button cat_button_2_note;
 	@FXML
 	private ImageView edit;
 	@FXML
@@ -49,8 +68,11 @@ public class Controller {
 	private ImageView add;
 	@FXML
 	private ImageView recette;
-		
 	@FXML
+	private GridPane receipe1;
+	@FXML
+	private GridPane receipe2;
+	
 	protected void initialize() {
 		set_image(cocktail,b.cocktail, "/image/cocktail.png", "/image/cocktail_2.png");
 		set_image(apero,b.apero, "/image/apero.png", "/image/apero_2.png");
@@ -102,6 +124,97 @@ public class Controller {
 		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 
 	     }    
+	     if (event.getSource() == difficulty)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) difficulty.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }    
+	     if (event.getSource() == recent)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) recent.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }    
+	     if (event.getSource() == note)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) note.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/Main_note.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }
+	     if (event.getSource() == difficulty_cat)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) difficulty_cat.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/main_cat.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }    
+	     if (event.getSource() == recent_cat)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) recent_cat.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/main_cat.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }    
+	     if (event.getSource() == note_cat)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) note_cat.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/main_cat_note.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }    
+	     if (event.getSource() == back)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) back.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+
+	     }    
 	     if (event.getSource() == cat_button)
 	     {
 	    	 System.out.println("blabla");
@@ -115,12 +228,36 @@ public class Controller {
 		     stage.show();
 		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 	     }
+	     if (event.getSource() == cat_button_note)
+	     {
+	    	 System.out.println("blabla");
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) cat_button_note.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/main_cat_note.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+	     }
 	     if (event.getSource() == cat_button_2)
 	     {
 	    	 Stage stage = null; 
 		     Parent root = null;
 		     stage=(Stage) cat_button_2.getScene().getWindow();
 			 root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
+			 Scene scene = new Scene(root);
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+	     } 
+	     if (event.getSource() == cat_button_2_note)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) cat_button_2_note.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/Main_note.fxml"));
 			 Scene scene = new Scene(root);
 		     stage.setScene(scene);
 		     stage.show();
@@ -153,7 +290,34 @@ public class Controller {
 			     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 			  }     
 		
-}
+	}
+	
+	@FXML  
+	private void receipe_clicked(MouseEvent event) throws IOException, InterruptedException {		     
+		     if (event.getSource() == receipe1)
+		     {
+		    	 Stage stage = null; 
+			     Parent root = null;
+			     stage=(Stage) edit.getScene().getWindow();
+				 root = FXMLLoader.load(getClass().getResource("../view/Recette.fxml"));
+				 Scene scene = new Scene(root);
+			     stage.setScene(scene);
+			     stage.show();
+			     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+			  }     
+		     if (event.getSource() == receipe2)
+		     {
+		    	 Stage stage = null; 
+			     Parent root = null;
+			     stage=(Stage) edit.getScene().getWindow();
+				 root = FXMLLoader.load(getClass().getResource("../view/Recette_2.fxml"));
+				 Scene scene = new Scene(root);
+			     stage.setScene(scene);
+			     stage.show();
+			     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+			  }     
+		
+	}
 		
 		private boolean change(MouseEvent event, ImageView source, String img_1, String img_2, boolean b) {
 		// TODO Auto-generated method stub

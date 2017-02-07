@@ -101,7 +101,7 @@
             <RowConstraints maxHeight="555.0" minHeight="10.0" prefHeight="352.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane id="cadre" fx:id="receipe1" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="1">
+            <GridPane id="cadre" fx:id="receipe1" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="3">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
@@ -145,7 +145,7 @@
                         <Image url="@../image/edit.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="45.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                  <ImageView fitHeight="46.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                      <image>
                         <Image url="@../image/3stars.png" />
                      </image>
@@ -155,7 +155,7 @@
                   </ImageView>
                </children>
             </GridPane>
-            <GridPane id="cadre" fx:id="receipe2" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+            <GridPane id="cadre" fx:id="receipe2" onMouseClicked="#receipe_clicked" prefHeight="327.0" prefWidth="450.0" style="-fx-background-color: rgb(255,255,255);" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
                 <ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
@@ -199,7 +199,7 @@
                         <Insets bottom="40.0" right="20.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <ImageView fitHeight="40.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                  <ImageView fitHeight="43.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                      <image>
                         <Image url="@../image/4stars.png" />
                      </image>
@@ -300,7 +300,7 @@
                   </ScrollPane>
                </children>
             </VBox>
-            <Button id="cat_button" fx:id="cat_button_2" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="491.0" text="..." GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+            <Button id="cat_button" fx:id="cat_button_2_note" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="491.0" text="..." GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="TOP" />
          </children>
       </GridPane>
    </children>

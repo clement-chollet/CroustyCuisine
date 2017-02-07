@@ -18,7 +18,17 @@
 	-fx-background-color : rgba(109,181,45,0);
 	-fx-underline: true;
 }
-
+#cat_button
+{
+	-fx-text-fill: rgb(244,244,245);
+	-fx-alignment: CENTER;
+	-fx-background-color : rgb(109,181,45);
+	-fx-background-radius: 0,0,0,0;
+}
+#cat_button:hover
+{
+	-fx-background-color : rgb(145,221,85);
+}
 #connect
 {
 	-fx-text-fill: rgb(244,244,245);
@@ -26,6 +36,21 @@
 	-fx-background-color : rgb(109,181,45);
 	-fx-background-radius: 0,0,0,0;
 	/*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
+}
+#connect:hover
+{
+	-fx-background-color : rgb(145,221,85);
+}
+#back
+{
+	-fx-text-fill: rgb(244,244,245);
+	-fx-alignment: CENTER;
+	-fx-background-color : rgb(109,181,45);
+	-fx-background-radius: 0,0,0,0;
+}
+#back:hover
+{
+	-fx-background-color : rgb(145,221,85);
 }
 #account
 {
@@ -45,13 +70,28 @@
     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
 	/*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
 }
+#account:hover
+{
+	-fx-background-color : rgb(109,181,45);
+	-fx-text-fill: rgb(244,244,245);
+}
 
-
+#receipe
+{
+	-fx-prompt-text-fill: white;
+	-fx-text-fill: black;
+	-fx-alignment: LEFT;
+	-fx-border-width: 10px;
+	-fx-underline:true;
+	-fx-background-color : white;
+	-fx-underline: true;
+}
 
 
 #cadre
 {
 	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+	-fx-background-color: white;
 }
 
 #edit
