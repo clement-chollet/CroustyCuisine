@@ -1,8 +1,7 @@
 package controller;
 
-import java.io.File;
-import java.io.IOException;
 
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -46,7 +45,8 @@ public class Controller {
 	private ImageView chaud;
 	@FXML
 	private ImageView froid;
-	
+	@FXML
+	private ImageView add;
 	@FXML
 	private ImageView recette;
 		
@@ -174,4 +174,17 @@ public class Controller {
 	     }
 		return b;
 	}
-	}
+		@FXML
+		private void handle_add(MouseEvent event) throws IOException{
+			 if (event.getSource() == add)
+		     {
+			Stage stage = null; 
+		    Parent root = null;
+		    stage=(Stage) add.getScene().getWindow();
+			root = FXMLLoader.load(getClass().getResource("../view/Recette.fxml"));
+			Scene scene = new Scene(root);
+		    stage.setScene(scene);
+		    stage.show();
+		     }
+		}
+}
