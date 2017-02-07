@@ -139,7 +139,7 @@ public class Controller {
 		 b.plat = change(event, plat, "/image/plat.png", "/image/plat_2.png", b.plat);
 		 b.glace = change(event, glace, "/image/glace.png", "/image/glace_2.png", b.glace);
 		 b.chaud = change(event, chaud, "/image/chaud.png", "/image/chaud_2.png", b.chaud);
-		 b.froid = change(event, froid, "/image/froid.png", "/image/froid_2.png", b.froid);
+		 b.froid = change(event, froid, "/image/froid.png", "/image/froid_2.png", b.froid); 
 		     
 		     if (event.getSource() == edit)
 		     {
