@@ -44,15 +44,11 @@
                   <Font size="21.0" />
                </font>
             </TextField>
-            <Button id="connect" fx:id="btn1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="224.0" text="Se connecter" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button id="connect" fx:id="create_account" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="224.0" text="Créer compte" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button id="account" fx:id="register" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="265.0" text="Créer un nouveau compte" GridPane.columnIndex="1" GridPane.rowIndex="4">
-               <GridPane.margin>
-                  <Insets bottom="50.0" />
-               </GridPane.margin></Button>
             <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#6db52d" height="3.0" scaleY="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="246.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets top="30.0" />
@@ -68,6 +64,16 @@
                   <Font size="21.0" />
                </font>
             </TextField>
+            <TextField id="mail_field" alignment="CENTER" maxWidth="1.7976931348623157E308" promptText="Répéter mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#6db52d" height="3.0" scaleY="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="246.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="30.0" />
+               </GridPane.margin>
+            </Rectangle>
          </children>
       </GridPane>
    </children>

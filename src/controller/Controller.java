@@ -37,6 +37,10 @@ public class Controller {
 	@FXML
     private Button cat_button;
 	@FXML
+    private Button create_account;
+	@FXML
+    private Button register;
+	@FXML
     private Button cat_button_note;
 	@FXML
     private Button cat_button_2;
@@ -213,7 +217,30 @@ public class Controller {
 		     stage.setScene(scene);
 		     stage.show();
 		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
-
+	     }    
+	     if (event.getSource() == create_account)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) create_account.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/Accueil.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+	     }    
+	     if (event.getSource() == register)
+	     {
+	    	 Stage stage = null; 
+		     Parent root = null;
+		     stage=(Stage) register.getScene().getWindow();
+			 root = FXMLLoader.load(getClass().getResource("../view/register.fxml"));
+			 Scene scene = new Scene(root);
+			 
+		     stage.setScene(scene);
+		     stage.show();
+		     scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 	     }    
 	     if (event.getSource() == cat_button)
 	     {
