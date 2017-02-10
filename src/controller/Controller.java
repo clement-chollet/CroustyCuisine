@@ -442,6 +442,7 @@ public class Controller implements Initializable{
 			stage = (Stage) add.getScene().getWindow();
 			root = FXMLLoader.load(getClass().getResource("../view/Recette.fxml"));
 			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 			stage.setScene(scene);
 			stage.show();
 		}
