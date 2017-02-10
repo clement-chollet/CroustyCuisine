@@ -174,7 +174,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Label>
-                              <Label text="- Ingrédients 4">
+                              <Label text="- Ingrédient 4">
                                  <padding>
                                     <Insets left="20.0" />
                                  </padding>
@@ -182,7 +182,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Label>
-                              <Label text="- Ingrédients 5">
+                              <Label text="- Ingrédient 5">
                                  <padding>
                                     <Insets left="20.0" />
                                  </padding>
