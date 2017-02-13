@@ -40,7 +40,7 @@
             <RowConstraints maxHeight="251.0" minHeight="10.0" prefHeight="191.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <PasswordField alignment="CENTER" promptText="Mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <PasswordField fx:id="mail_field" alignment="CENTER" promptText="Mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="21.0" />
                </font>

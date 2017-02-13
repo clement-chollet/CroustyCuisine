@@ -65,12 +65,12 @@
                   <Insets top="30.0" />
                </GridPane.margin>
             </Rectangle>
-            <PasswordField promptText="Mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <PasswordField id="mail_field" alignment="CENTER" promptText="Mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="21.0" />
                </font>
             </PasswordField>
-            <PasswordField promptText="Répéter le mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <PasswordField id="mail_field" alignment="CENTER" promptText="Répéter le mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font size="21.0" />
                </font>
