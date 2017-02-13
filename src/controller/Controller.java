@@ -93,51 +93,12 @@ public class Controller implements Initializable{
 	@FXML
 	private ImageView newRecette;
 	@FXML
-	private MenuButton menu;
-	@FXML
-	private MenuItem disconnect;
-	@FXML
-	private MenuItem compte;
-	@FXML
-	private MenuItem about;
-	@FXML
 	private TextField recherche;
 	@FXML
 	private Button addIngredient;
-
-	private EventHandler<ActionEvent> menuItemAction() {
-		return new EventHandler<ActionEvent>() {
-
-			public void handle(ActionEvent event) {
-				MenuItem mItem = (MenuItem) event.getSource();
-				switch (mItem.getText()) {
-				case "Deconnection":
-					try {
-						Stage stage = null;
-						Parent root = null;
-						stage = (Stage) recherche.getScene().getWindow();
-						root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
-						Scene scene = new Scene(root);
-						stage.setScene(scene);
-						stage.show();
-						scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					break;
-				case "About":
-					System.out.println("About");
-					Alert alert = new Alert(AlertType.INFORMATION);
-					alert.setTitle("About");
-					alert.setHeaderText(null);
-					alert.setContentText("Programmation réseau - ENSIM 2016/2017");
-					alert.showAndWait();
-					break;
-				}
-			}
-		};
-	}
+	
+	@FXML
+	private Button disconnect;
 
 	public void set_image(ImageView iv, boolean b, String i1, String i2) {
 		if (iv != null) {
@@ -175,6 +136,18 @@ public class Controller implements Initializable{
 			alert.setHeaderText(null);
 			alert.setContentText("Ingredient ajouté");
 			alert.showAndWait();
+		}
+		
+		if (event.getSource() == disconnect) {
+			Stage stage = null;
+			Parent root = null;
+			stage = (Stage) disconnect.getScene().getWindow();
+			root = FXMLLoader.load(getClass().getResource("../view/accueil.fxml"));
+			Scene scene = new Scene(root);
+
+			stage.setScene(scene);
+			stage.show();
+			scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 		}
 
 		if (event.getSource() == addRecette) {
@@ -348,6 +321,7 @@ public class Controller implements Initializable{
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
+			scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 		}
 	}
 
@@ -388,23 +362,6 @@ public class Controller implements Initializable{
 		}
 	}
 	
-	@FXML
-	private void menuButton(MouseEvent event) throws IOException, InterruptedException {
-		System.out.println("sfqsdfqddsqfqdsfdsqfdsqfdsqfdsfdsqf");
-		EventHandler<ActionEvent> action = menuItemAction();
-
-		disconnect = new MenuItem("Deconnection");
-		compte = new MenuItem("Compte");
-		about = new MenuItem("About");
-
-		menu.getItems().clear();
-		menu.getItems().addAll(compte, about, disconnect);
-
-		disconnect.setOnAction(action);
-		about.setOnAction(action);
-		compte.setOnAction(action);
-	}
-
 	@FXML
 	private void receipe_clicked(MouseEvent event) throws IOException, InterruptedException {
 		if (event.getSource() == receipe1) {
