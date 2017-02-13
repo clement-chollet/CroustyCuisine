@@ -61,6 +61,8 @@ public class Controller implements Initializable{
 	@FXML
 	private ImageView edit;
 	@FXML
+	private ImageView edit1;
+	@FXML
 	private ImageView cocktail;
 	@FXML
 	private ImageView apero;
@@ -367,13 +369,23 @@ public class Controller implements Initializable{
 			Stage stage = null;
 			Parent root = null;
 			stage = (Stage) edit.getScene().getWindow();
-			root = FXMLLoader.load(getClass().getResource("../view/Accueil.fxml"));
+			root = FXMLLoader.load(getClass().getResource("../view/EditionRecette.fxml"));
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
 			scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
 		}
 
+		if (event.getSource() == edit1) {
+			Stage stage = null;
+			Parent root = null;
+			stage = (Stage) edit1.getScene().getWindow();
+			root = FXMLLoader.load(getClass().getResource("../view/EditionRecette2.fxml"));
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+			scene.getStylesheets().add(getClass().getResource("../view/style.css").toExternalForm());
+		}
 	}
 	
 	@FXML

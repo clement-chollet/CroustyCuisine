@@ -187,7 +187,7 @@
                         <Insets bottom="15.0" right="15.0" />
                      </GridPane.margin>
                   </Label>
-                  <ImageView fitHeight="39.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                  <ImageView fx:id="edit1" fitHeight="39.0" fitWidth="42.0" onMouseClicked="#image_clicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
                      <image>
                         <Image url="@../image/edit.png" />
                      </image>
