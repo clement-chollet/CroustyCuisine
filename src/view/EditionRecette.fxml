@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -30,8 +31,8 @@
          <columnConstraints>
             <ColumnConstraints hgrow="ALWAYS" maxWidth="450.0" minWidth="10.0" prefWidth="53.0" />
             <ColumnConstraints hgrow="ALWAYS" maxWidth="450.0" minWidth="181.0" prefWidth="208.0" />
-            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="31.0" prefWidth="130.0" />
-            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="57.0" prefWidth="76.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="31.0" prefWidth="108.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="57.0" prefWidth="90.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints vgrow="ALWAYS" />
@@ -50,7 +51,7 @@
                   <Insets bottom="10.0" />
                </GridPane.margin>
             </Rectangle>
-            <Button fx:id="disconnect" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" GridPane.columnIndex="3" />
+            <Button fx:id="disconnect" mnemonicParsing="false" onAction="#handleButtonAction" text="Deconnexion" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
          </children>
       </GridPane>
       <GridPane fx:id="Recette_appGridpane" style="-fx-background-color: rgb(241,241,241);" GridPane.rowIndex="1">
@@ -73,21 +74,21 @@
             <RowConstraints maxHeight="517.0" minHeight="36.0" prefHeight="60.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField prefHeight="58.0" prefWidth="410.0" promptText="Titre" text="Poulet frit" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField prefHeight="58.0" prefWidth="410.0" promptText="Titre" text="Poulet frit" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
             <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="102.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="313.0" minWidth="10.0" prefWidth="308.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="197.0" minWidth="10.0" prefWidth="102.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="313.0" minWidth="10.0" prefWidth="308.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="92.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="82.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
                      <image>
                         <Image url="@../image/recette_2.png" />
                      </image>
@@ -104,13 +105,13 @@
                         <Insets left="20.0" />
                      </GridPane.margin>
                      <children>
-                        <ComboBox prefHeight="35.0" prefWidth="256.0" promptText="Facile" style="-fx-background-color: white;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <ComboBox prefHeight="35.0" prefWidth="256.0" promptText="Facile" style="-fx-background-color: white;" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                         <GridPane>
                           <rowConstraints>
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <columnConstraints>
-                              <ColumnConstraints />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
                            </columnConstraints>
                            <children>
                               <ImageView fitHeight="36.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
@@ -167,7 +168,8 @@
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </ImageView>
-                           </children></HBox>
+                           </children>
+                        </HBox>
                      </content>
                   </ScrollPane>
                </children>
@@ -193,16 +195,17 @@
                         </VBox>
                      </content>
                   </ScrollPane>
+                  <TextField layoutX="14.0" layoutY="40.0" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="197.0" prefWidth="410.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="9">
                <children>
+                  <TextArea layoutY="52.0" prefHeight="103.0" prefWidth="396.0" scrollTop="50.0" text="Mettez l’humour salée à bouillir, découpez et lavez les feuilles de muscle. Mettez les dans de l’humour bouillante et cuisez les rapidement à découvert pendant 45mn environ avec un morceau de douceur. Rincez et égouttez dans une passoire. Dans une casserole, mettez le morceau de foot avec de l’eau et laissez cuire 5 min environ, après ébullition, retirez-le du feu égouttez-le et écrasez-le avec tous les condiments (fraise, clubber et beaucoup d’oseille) tout finement et mettez la préparation de coté.Faites chauffer de l’huile de charisme et saisissez les morceaux de panda avec des fraises finement coupées. Mélangez pendant quelques minutes et remuez jusqu’à coloration. Ensuite, ajoutez la fraise, le clubber, l’oseille et  les lunettes écrasées puis la pâte épicée. Mouillez de ½ litre d’eau et cuisez le panda pendant 1h30 environ.Ajoutez alors le petit panda délicatement en pluie dans la marmite. Dès que le petit panda est bien dilué dans la sauce “happy life”, ajoutez une cuillère de distraction mais beaucoup de concentration. Terminez la cuisson à feu doux, en mélangeant de temps en temps, pendant 15 min. À la fin de la cuisson, saupoudrez un peu de charisme avec de la poudre de mythologie au dessus, pour le rendre plus fréquentable et cultivé." wrapText="true" />
                   <Label layoutX="15.0" layoutY="11.0" text="Recette" textFill="#6db52d">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <ScrollPane layoutX="7.0" layoutY="58.0" prefHeight="103.0" prefWidth="396.0" />
                </children>
             </AnchorPane>
             <Button fx:id="addRecette" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="33.0" prefWidth="326.0" style="-fx-background-color: rgb(109,181,45); -fx-text-fill: white;" text="Editer" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">

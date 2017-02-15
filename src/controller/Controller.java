@@ -429,6 +429,5 @@ public class Controller implements Initializable{
 		set_image(glace, b.glace, "/image/glace.png", "/image/glace_2.png");
 		set_image(chaud, b.chaud, "/image/chaud.png", "/image/chaud_2.png");
 		set_image(froid, b.froid, "/image/froid.png", "/image/froid_2.png");
-		
 	}
 }

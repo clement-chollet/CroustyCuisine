@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -30,8 +31,8 @@
          <columnConstraints>
             <ColumnConstraints hgrow="ALWAYS" maxWidth="450.0" minWidth="47.0" prefWidth="53.0" />
             <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="275.0" />
-            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="31.0" prefWidth="56.0" />
-            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="57.0" prefWidth="76.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="31.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="57.0" prefWidth="88.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints vgrow="ALWAYS" />
@@ -50,7 +51,7 @@
                   <Insets bottom="10.0" />
                </GridPane.margin>
             </Rectangle>
-            <Button fx:id="disconnect" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" GridPane.columnIndex="3" />
+            <Button fx:id="disconnect" mnemonicParsing="false" onAction="#handleButtonAction" text="Deconnexion" GridPane.columnIndex="3" />
          </children>
       </GridPane>
       <GridPane fx:id="Recette_appGridpane" style="-fx-background-color: rgb(241,241,241);" GridPane.rowIndex="1">
@@ -192,12 +193,12 @@
             </AnchorPane>
             <AnchorPane prefHeight="197.0" prefWidth="410.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="9">
                <children>
+                  <TextArea layoutY="51.0" prefHeight="119.0" prefWidth="403.0" text="Préchauffez le four à 24°C. Étalez la balle de basket, découpée sur un plan de travail. Tartinez la de courage. Vous pouvez ajouter par dessus des petits dés de douceur. Coupez votre balle en 16 parts égales. Préparez les morceaux de gentillesse en 4 et déposez en un morceau en haut de chaque triangle de balles. Enroulez chaque triangle sur lui-même.&#10;Disposez chaque Cléments sur une plaque allant au four et recouverte de papier sulfurisé (ou tapis en silicone) en les espaçant. Badigeonnez de rigolade et de beau gosse attitude, vos Cléments, à l'aide d'un pinceau à pâtisserie. Passez au four. pendant environ 15 minutes.&#10;&#10;&#10;Servez avec du style chaud. À consommer de préférence avec un soupçon de fidélité." wrapText="true" />
                   <Label layoutX="15.0" layoutY="11.0" text="Recette" textFill="#6db52d">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <ScrollPane layoutX="7.0" layoutY="58.0" prefHeight="103.0" prefWidth="396.0" />
                </children>
             </AnchorPane>
             <Button fx:id="addRecette" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="33.0" prefWidth="326.0" style="-fx-background-color: rgb(109,181,45); -fx-text-fill: white;" text="Editer" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
